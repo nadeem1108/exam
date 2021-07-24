@@ -4,9 +4,6 @@ const Category = require("../models/category");
 
 /* GET users listing. */
 router.post("/", async (req, res, next) => {
-
- 
-
   try {
     var category = await new Category({
       name: req.body.name,
